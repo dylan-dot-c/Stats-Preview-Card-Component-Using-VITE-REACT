@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lexend+Deca&display=swap');
+
+:root {
+    --main-bg: hsl(233, 47%, 7%);
+    --card-bg: hsl(244, 38%, 16%);
+    --accent: hsl(277, 64%, 61%);
+    --heading: hsl(0, 0%, 100%);
+    --main-text: hsla(0, 0%, 100%, 0.75);
+    --stat-heading: hsla(0, 0%, 100%, 0.6);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        @apply bg-main-bg text-white;
+    }
+
+    body {
+        @apply grid place-items-center min-h-screen min-w-full p-4 py-16;
+        font-family: "Inter", sans;
+
+    }
+
+    h1 {
+        @apply mb-4;
+    }
+
+    .image {
+        background: linear-gradient(135deg, hsla(277, 100%, 50%, 0.5), hsla(277, 100%, 50%, 0.432)), url(/src/assets/desktophead.jpg);
+        @apply md:max-w-[40%] md:w-[550px] w-[100%] h-[250px]  md:h-auto;
+        background-size: cover;
+    }
+}

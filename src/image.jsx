@@ -2,7 +2,7 @@
 
 function Image() {
     return (
-        <div className="card--image">
+        <div className="image ">
         </div>
     )
 }
